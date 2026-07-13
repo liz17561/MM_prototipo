@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+  href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng"
+  schematypens="http://relaxng.org/ns/structure/1.0"
+  type="application/xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ita">
+ <teiHeader>
+    <fileDesc>
+
+      <titleStmt>
+        <title>Meditazione milanese, Parte Seconda - Prototipo di edizione digitale</title>
+        <author xml:id="CEG" sameAs="http://viaf.org/viaf/56610080">Carlo Emilio Gadda</author>
+      </titleStmt>
+
+      <editionStmt>
+          <edition>Edizione digitale limitata al Par. &lt;XVI&gt; &lt;Teorema secondo&gt;</edition>
+          <respStmt>
+            <resp>Edizione e codifica in XML/TEI</resp>
+            <persName xml:id="AC">Alice Caputa</persName>
+            <orgName>Alma Mater Studiorum - University of Bologna</orgName>
+        </respStmt>
+        <!--<respStmt>
+          <resp>Edizione originale</resp>
+          <persName xml:id="GR">Giancarlo Roscioni</persName>
+        </respStmt>-->
+      </editionStmt>
+      
+      <publicationStmt>
+        <publisher>UniBO</publisher>
+        <pubPlace>Bologna</pubPlace>
+        <date>2026</date>
+        <availability status="restricted">
+          <p>Il prototipo costituisce parte integrante di una tesi di laurea magistrale ad accesso riservato</p>
+        </availability>
+      </publicationStmt>
+
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="Ros_6_14">
+            <msDesc>
+              <msIdentifier>
+                <settlement>Milano</settlement>
+                <repository>Comune di Milano. Archivio storico civico - Biblioteca Trivulziana. Fondo Gadda Roscioni</repository>
+                <idno type="shelfmark">Roscioni 6.14</idno>
+              </msIdentifier>
+              <msContents><p>Contiene i Paragrafi &lt;IX&gt;-&lt;XXI&gt; della <hi rend="italic">Parte Seconda</hi> della <hi rend="italic">Meditazione milanese</hi> (corrispondenti ai Par. &lt;VIII&gt;-&lt;XIX&gt; dell'edizione Garzanti 2002).</p></msContents>
+              <physDesc><p>Quaderno a righe con copertina grigia ed etichetta bianca intestata «C. Gargantini | Milano | Via Moscova, 47 | Telef. 10-145», con l’indicazione: «<hi rend="italic">Ing. Carlo Emilio Gadda.</hi> | <hi rend="italic">Meditazione Prima</hi>. | <hi rend="italic">(Abbozzo.)</hi> | <hi rend="italic">Vol. II°. 1928</hi>. | <hi rend="italic">Milano</hi>». Comprende 6o ff. + 1 di risguardo anteriore e uno posteriore. Numerati da G. per pagina a matita rossa 1-122. Interamente utilizzati. Un foglio sciolto doppio (siglato da G. 15bis) è collocato tra le pagine numerate 14-15; un foglio sciolto (siglato 25bis) tra le pp. numerate 24-25; 6 ff. sciolti (di vario formato), di cui il secondo, terzo e sesto doppi (siglati per pagina 55a-s) tra le pp. 54-55; un foglio sciolto (siglato da G. su entrambe le facciate 62bis, 63bis) tra le pp. numerate 62-63; 1 foglietto sciolto (numerato 115a) tra le pp. 114-15; 1 f. sciolto (numerato 122a) tra le pp. 120-21. Sul f. 1 <hi rend="italic">recto</hi> 1'intitolazione: «Ing. Carlo Emilio Gadda. | Milano, maggio 1928. | Medinazione prima – | Vol. II.°». Sul margine sup. sx del foglio di risguardo anteriore: «Vol. 7.° | dei manoscritti | di C. E. Gadda». Contiene <hi rend="italic">Meditazione prima</hi>, vol. II <bibl>(<author>Barbara Colli</author>,<title> Il fondo Gadda nell’Archivio Gian Carlo Roscioni nella Biblioteca Trivulziana (IV parte)</title>, «Quaderni dell’Ingegnere», 5, <date>2014</date>, pp. 267-313:302).</bibl></p>
+              </physDesc>
+            </msDesc>
+          </witness>
+        </listWit>
+
+        <listPerson type="mythologicalCharacters">
+          <person xml:id="Achille" sameAs="https://lccn.loc.gov/no2015006387">
+            <persName>Achille</persName> 
+            <idno type="LCA">no2015006387</idno>
+            <note>Eroe della mitologica greca</note>
+          </person>
+        </listPerson>
+        <listPerson type="philosophers">
+          <person xml:id="Leibniz" sameAs="http://viaf.org/viaf/9849392">
+            <persName>Leibniz, Gottfried Wilhelm</persName> 
+            <idno type="VIAF">9849392</idno>
+            <idno type="ULAN">500228235</idno>
+            <note>Filosofo, matematico e inventore tedesco, 1646-1716</note>
+          </person>
+          <person xml:id="Zenone" sameAs="http://viaf.org/viaf/115351050">
+            <persName>Zenone di Elea</persName> 
+            <idno type="VIAF">115351050</idno>
+            <note>Filosofo greco, V sec. a.C.</note>
+          </person>
+          <person xml:id="Bayle" sameAs="http://viaf.org/viaf/61554695">
+            <persName>Bayle, Pierre</persName> 
+            <idno type="VIAF">61554695</idno>
+            <note>Filosofo francese, 1647-1706</note>
+          </person>
+          <person xml:id="Kant" sameAs="http://viaf.org/viaf/82088490">
+            <persName>Kant, Immanuel</persName> 
+            <idno type="VIAF">82088490</idno>
+            <idno type="ULAN">500107055</idno>
+            <note>Filosofo tedesco, 1724-1804</note>
+          </person>
+          <person xml:id="Fichte" sameAs="http://viaf.org/viaf/29533830">
+            <persName>Fichte, Johann Gottlieb</persName> 
+            <idno type="VIAF">29533830</idno>
+            <idno type="ULAN">500243898</idno>
+            <note>Filosofo tedesco, 1762-1814</note>
+          </person>
+          <person xml:id="Spinoza" sameAs="http://viaf.org/viaf/22149024">
+            <persName>Spinoza, Benedictus de</persName> 
+            <idno type="VIAF">22149024</idno>
+            <idno type="ULAN">500341371</idno>
+            <note>Filosofo olandese, 1632-1677</note>
+          </person>
+          <person xml:id="Aristotele" sameAs="http://viaf.org/viaf/7524651">
+            <persName>Aristotele</persName> 
+            <idno type="VIAF">7524651</idno>
+            <idno type="ULAN">500259120</idno>
+            <note>Filosofo greco, 384/3-322 a.C.</note>
+          </person>
+          <person xml:id="Bruno" sameAs="http://viaf.org/viaf/68926311">
+            <persName>Giordano Bruno</persName> 
+            <idno type="VIAF">68926311</idno>
+            <idno type="ULAN">500338736</idno>
+            <note>Filosofo italiano, 1548-1600</note>
+          </person>
+        </listPerson>
+        <listPerson type="mathematicians">
+          <person xml:id="Euclide" sameAs="http://viaf.org/viaf/176184097">
+            <persName>Euclide</persName> 
+            <idno type="VIAF">176184097</idno>
+            <note>Matematico greco, 323-285 a.C.</note>
+          </person>
+        </listPerson>
+
+        <listPlace>
+          <place xml:id="Caraibi" sameAs="http://vocab.getty.edu/page/tgn/8729366">
+            <placeName>Caraibi</placeName>
+            <idno type="TGN">8729366</idno>
+          </place>
+          <place xml:id="Trento" sameAs="http://vocab.getty.edu/page/tgn/7005128">
+            <placeName>Trento</placeName>
+            <idno type="TGN">7005128</idno>
+          </place>
+           <place xml:id="Alpi" sameAs="http://vocab.getty.edu/tgn/7007746">
+            <placeName>Alpi</placeName>
+            <idno type="TGN"></idno>
+          </place>
+          <place xml:id="Tirreno" sameAs="http://vocab.getty.edu/tgn/1112319">
+            <placeName>Mar Tirreno</placeName>
+            <idno type="TGN"></idno>
+          </place>
+           <place xml:id="Aletsch" sameAs="http://vocab.getty.edu/tgn/8703638">
+            <placeName>Aletsch</placeName>
+            <idno type="TGN"></idno>
+            <note>Ghiacciaio svizzero</note>
+          </place>
+          <place xml:id="Rodano" sameAs="http://vocab.getty.edu/tgn/7023890">
+            <placeName>Fiume Rodano</placeName>
+            <idno type="TGN"></idno>
+          </place>
+        </listPlace>
+
+        <listEvent>
+          <event xml:id="concTrento" from="1545" to="1563" where="#Trento">
+            <eventName>Concilio di Trento</eventName>
+            <note>Concilio universale, 1545-1563</note>
+          </event>
+        </listEvent>
+
+        <listBibl type="quoted/sources">
+          <bibl xml:id="ragionPura">
+            <author corresp="#Kant">Immanuel Kant</author>,
+            <title>Critica della ragion pura</title>,
+            <date>1781, 1787</date>
+          </bibl>
+          <bibl xml:id="furioso32">
+            <author>Ludovico Ariosto</author>,
+            <title>Orlando Furioso</title>,
+            <date>1532</date>
+          </bibl>
+        </listBibl>
+
+        <listBibl type="paralPass">
+          <bibl xml:id="RR1_L-A">
+            <author corresp="#CEG">Carlo Emilio Gadda</author>,
+            <title level="m">L’Adalgisa – Disegni milanesi</title>, in
+            <bibl xml:id="RR1"> 
+              <author corresp="#CEG">Carlo Emilio Gadda</author>,
+              <title level="s">Opere</title>, <biblScope unit="volume">I (Romanzi e racconti, vol. I)</biblScope>, a cura di <editor>Raffaella Rodondi</editor>, <editor>Guido Lucchini</editor>, <editor>Emilio Manzotti</editor>, <pubPlace>Milano</pubPlace>, 
+              <publisher>Garzanti</publisher>, 
+              <date when="1988">1988</date>,
+            </bibl>
+            <biblScope unit="page">pp. 283-564</biblScope>.
+          </bibl>
+          <bibl xml:id="RR1_CdD">
+            <author corresp="#CEG">Carlo Emilio Gadda</author>,
+            <title level="m">La cognizione del dolore</title>, in
+            <bibl corresp="#RR1"> 
+              <author corresp="#CEG">Carlo Emilio Gadda</author>,
+              <title level="s">Opere</title>, <biblScope unit="volume">I (Romanzi e racconti, vol. I)</biblScope>, a cura di <editor>Raffaella Rodondi</editor>, <editor>Guido Lucchini</editor>, <editor>Emilio Manzotti</editor>, <pubPlace>Milano</pubPlace>, 
+              <publisher>Garzanti</publisher>, 
+              <date when="1988">1988</date>,
+            </bibl>
+              <biblScope unit="page">pp. 565-772</biblScope>.
+          </bibl>
+          <bibl xml:id="RR1_CdU">
+            <author corresp="#CEG">Carlo Emilio Gadda</author>,
+            <title level="m">Il castello di Udine</title>, in
+            <bibl corresp="#RR1"> 
+              <author corresp="#CEG">Carlo Emilio Gadda</author>,
+              <title level="s">Opere</title>, <biblScope unit="volume">I (Romanzi e racconti, vol. I)</biblScope>, a cura di <editor>Raffaella Rodondi</editor>, <editor>Guido Lucchini</editor>, <editor>Emilio Manzotti</editor>, <pubPlace>Milano</pubPlace>, 
+              <publisher>Garzanti</publisher>, 
+              <date when="1988">1988</date>,
+            </bibl>
+              <biblScope unit="page">pp. 119-281</biblScope>.
+          </bibl>
+          <bibl xml:id="RR2_M">
+            <author corresp="#CEG">Carlo Emilio Gadda</author>,
+            <title level="m">La meccanica</title>, in
+            <bibl xml:id="RR2">
+              <author corresp="#CEG">Carlo Emilio Gadda</author>,
+              <title level="s">Opere</title>, <biblScope unit="volume">II (Romanzi e racconti, vol. II)</biblScope>, a cura di
+              <editor>Giorgio Pinotti</editor>, <editor>Dante Isella</editor>, <editor>Raffaella Rodondi</editor>,
+              <pubPlace>Milano</pubPlace>, 
+              <publisher>Garzanti</publisher>, 
+              <date when="1989">1989</date>,
+            </bibl>
+              <biblScope unit="page">pp. 461-589</biblScope>.
+          </bibl>
+          <bibl xml:id="SGF1_SD">
+            <author corresp="#CEG">Carlo Emilio Gadda</author>,
+            <title level="m">Scritti dispersi</title>, in
+            <bibl xml:id="SGF1">
+              <author corresp="#CEG">Carlo Emilio Gadda</author>,
+              <title level="s">Opere</title>, <biblScope unit="volume">III (Saggi giornali favole e altri scritti, vol. I)</biblScope>, a cura di
+              <editor>Dante Isella</editor>, <editor>Clelia Martignoni</editor>, <editor>Liliana Orlando</editor>,
+              <pubPlace>Milano</pubPlace>, 
+              <publisher>Garzanti</publisher>, 
+              <date when="1991">1991</date>,
+            </bibl>
+              <biblScope unit="page">pp. 669-1226</biblScope>.
+          </bibl>
+          <bibl xml:id="SGF2_GGP">
+            <author corresp="#CEG">Carlo Emilio Gadda</author>,
+            <title level="m">Giornale di guerra e di prigionia</title>, in
+            <bibl xml:id="SGF2">
+              <author corresp="#CEG">Carlo Emilio Gadda</author>,
+              <title level="s">Opere</title>, <biblScope unit="volume">IV (Saggi giornali favole e altri scritti, vol. II)</biblScope>, a cura di
+              <editor>Gianmarco Gaspari</editor>, <editor>Franco Gavazzeni</editor>, <editor>Maria Antonietta Terzoli</editor>, <editor>Claudio Vela</editor>,
+              <pubPlace>Milano</pubPlace>, 
+              <publisher>Garzanti</publisher>, 
+              <date when="1992">1992</date>,
+            </bibl>
+              <biblScope unit="page">pp. 431-867</biblScope>.
+          </bibl>
+          <bibl xml:id="SVP_RI">
+            <author corresp="#CEG">Carlo Emilio Gadda</author>,
+            <title level="m">Racconto italiano di ignoto del novecento</title>, in
+            <bibl xml:id="SVP">
+              <author corresp="#CEG">Carlo Emilio Gadda</author>,
+              <title level="s">Opere</title>, <biblScope unit="volume">V (Scritti vari e postumi)</biblScope>, a cura di
+              <editor>Andrea Silvestri</editor>, <editor>Claudio Vela</editor>, <editor>Dante Isella</editor>, <editor>Paola Italia</editor>, <editor>Giorgio Pinotti</editor>,
+              <pubPlace>Milano</pubPlace>, 
+              <publisher>Garzanti</publisher>, 
+              <date when="1993">1993</date>,
+            </bibl>
+              <biblScope unit="page">pp. 381-613</biblScope>.
+          </bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+
+    <profileDesc>
+      <creation corresp="#Ros_6_14" resp="#AC">
+        <listChange ordered="true">
+          <change xml:id="strato-0">Stesura base del testo; presenza di varianti immediate</change>
+          <change xml:id="strato-1">Primo strato di varianti e correzioni apportate in penna base (queste ultime non discriminabili tra immediate e tardive)</change>
+          <change xml:id="strato-2">Secondo strato di varianti e correzioni apportate in lapis</change>
+         <change xml:id="strato-3">Terzo strato di varianti e correzioni apportate in matita rossa</change>
+        </listChange>
+        <listChange ordered="false">
+          <change xml:id="strato-p2">Varianti e correzioni apportate in penna nera</change>
+          <change xml:id="strato-p3">Varianti e correzioni apportate in penna color seppia</change>
+          <change xml:id="strato-v">Varianti e correzioni apportate in matita violetta</change>
+          <change xml:id="strato-b">Varianti e correzioni apportate in matita blu</change>
+        </listChange>
+      </creation>
+      <!--C'è altro da aggiungere qui nel profileDesc?-->
+    </profileDesc>
+
+    <encodingDesc>
+      <!--<p></p> INDICARE QUI COSA MARCATO E CON QUALI CRITERI-->
+      <variantEncoding location="internal" method="parallel-segmentation"/>
+    </encodingDesc>
+</teiHeader>
+
+ <text>
+  <body>
+    <div xml:id="XVI_Sec_teor">
+      <pb n="25r (41)" xml:id="c_6.14.25r_p_41" facs="25r.jpg"/>
+      <head><supplied resp="#AC">XVI Teorema secondo </supplied></head>
+      <!--Se si utilizza tag note per postille, appare fumetto nel testo, no tab: stessa cosa in edizione Saba-->
+      <p><note type="authorial_structural" resp="#CEG" place="above right"><mod change="#strato-3">Teorema 2°. Vedi vol 1°. – pag 69 – nota in alto</mod></note> A riprova della deformabilità del sistema  della conoscenza <mod change="#strato-0" type="overwritten" instant="true"><subst><del rend="overwritten">r<supplied resp="#AC" cert="medium">ichiamerò</supplied></del> <add place="superimposed">voglio richiamare</add></subst></mod> l’attenzione su un fatto noto: 
+     <app>
+        <lem><mod change="#strato-1" type="reuse"><del rend="strikethrough">potrei</del> chiam<subst><del rend="overwritten">are</del><add place="superimposed">erò</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">potrei chiamare</mod></rdg>
+      </app> Teorema 2° 
+     <!--CODIFICA 1--> 
+      <app>
+        <lem><mod change="#strato-1" type="reuse">quest<subst><del rend="overwritten">a</del><add place="superimposed">o</add></subst> <metamark function="insertion" rend="caret"/><add place="above">gruppo di</add> affermazion<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">questa affermazione</mod></rdg>
+      </app>, sebbene in un senso blando poiché non potrei certo presumere di stabilirle su basi <mod change="#strato-1" type="reuse"><metamark function="insertion" rend="caret"/><add place="above">logico-</add></mod>matematiche.</p> 
+      <p>È cosa pressoché costante nella storia del pensiero che <mod change="#strato-0" type="immediate" instant="true"><subst><del rend="strikethrough">an<supplied>che</supplied></del> <del rend="strikethrough">ogn<supplied>i</supplied></del> <add place="inline">tutti</add></subst></mod> i sistemi, anche i più compatti e grandiosi, 
+      <seg ana="#personification"><app>
+        <lem><mod change="#strato-1" type="superscript"><subst><del rend="strikethrough">abbiano</del><add place="above">rechino</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">abbiano</mod></rdg>
+      </app> in sé una intima angoscia</seg>, che si tramuta all’occhio trionfatore dei critici nel<mod change="#strato-1" type="reuse"><add place="inline">l’</add><metamark function="insertion" rend="caret"/><add place="above">appariz<supplied resp="#AC">ione</supplied> di un</add></mod> punto di contraddizione. Ogni sistema filosofico cioè ogni sforzo conoscitivo integratore della realtà ha un <seg ana="#correctio">punto <mod change="#strato-0" type="immediate" instant="true"><subst><del rend="strikethrough">di<supplied resp="#AC" cert="high">fettoso </supplied></del> <add place="inline">maligno</add></subst></mod> o punto difettoso</seg>, ove <seg ana="#metaphor">i nodi <mod change="#strato-1" type="inserted"><add place="above">dell<subst><del rend="overwritten">e</del><add place="superimposed">a</add></subst> <subst><del rend="strikethrough">posizioni</del><add place="inline">costruzione</add></subst></add></mod> 
+      vengono al pettine della critica</seg>. E 
+      <app>
+        <lem><mod change="#strato-2" type="superscript"><subst><del rend="strikethrough">il mio</del><add place="above">la mia povera chiacchiera</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">il mio</mod></rdg>
+      </app>
+     seguirà <app>
+        <lem><mod change="#strato-2"><del rend="strikethrough">forse</del></mod></lem>
+        <rdg><mod change="#strato-0">forse</mod></rdg>
+      </app> la sorte comune. <mod change="#strato-0" type="immediate" instant="true"><del rend="strikethrough">In<supplied resp="#AC" cert="medium">dicherò</supplied></del></mod> (Per facilitare le cose 
+      <seg ana="#simile_parallelism_comparison"><app>
+        <lem><mod change="#strato-1" type="superscript"><subst><del rend="strikethrough">indicherò</del><add place="above">denuncerò</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">indicherò</mod></rdg>
+      </app>
+      anzi io stesso, <seg ana="#antonomasia"><persName ref="#Achille">Achille</persName></seg> filosofo, dove è vulnerabile la 
+      <app>
+        <lem><mod change="#strato-2" type="superscript"><subst><del rend="strikethrough">dura</del><add place="above">mediocre</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">dura</mod></rdg>
+      </app>
+      mia pelle</seg>.) <metamark function="attachment" rend="number"/> <note type="authorial_metatextual" resp="#CEG" place="bottom">Come si possono immaginare sistemi di relazioni aventi ‘relazioni o <gap reason="omitted"/> comuni’? Teorema degli attributi. –</note> Solo la Scienza sembra non <seg ana="#personification">soffrire</seg> di contraddizioni: 
+      <app>
+        <lem><mod change="#strato-1" type="superscript"><subst><del rend="strikethrough">essa si appoggia ma essa non è</del><add place="above">perciocché essa non costituisce</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">essa si appoggia ma essa non è</mod></rdg>
+      </app>
+      mai un sistema totale, ma 
+      <app>
+        <lem><mod change="#strato-1" type="reuse">un<add place="inline">a</add> <subst><del rend="strikethrough">gruppo</del><add place="above">pluralità</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">un gruppo</mod></rdg>
+      </app> di posizioni <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">(le<metamark function="split" rend="slash"/> varie discipline o Scienze)</add></mod>, ciascuna delle quali <seg type="simile_parallelism_comparison">sta per suo conto <mod change="#strato-1" type="inserted"><add place="above">(come <seg type="parallel" corresp="#fortilizî">fortilizî spagnoli</seg> nel regno dei <placeName ref="#Caraibi">Caraibi</placeName>)</add></mod></seg>, pur <seg ana="#simile_parallelism_comparison">appoggiandosi, dove le fa comodo, <mod change="#strato-0" type="reuse">a<del rend="strikethrough" instant="true">d</del></mod> posizioni esterne: come la casa nuova si <pb n="25v (42)" xml:id="c_6.14.25v_p_42" facs="25v.jpg"/> <choice><sic>si</sic><corr resp="#AC"> </corr></choice> appoggia al muro della vicina, già costruito</seg>.</p> 
+      <p>E <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">ciascuna Scienza</add></mod> <seg ana="#personification">pone da sé i suoi termini, <seg ana="#accumulation">belli, lindi, certi, finiti, <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">ben pettinati,</add></mod> indiscutibili, <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">sui quali non cade ombra di dubbio</add></mod></seg><supplied resp="#AC">,</supplied> <seg ana="#anaphora">senza perplessità, senza angosce, <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">senza nuvolaglie filosofiche</add></mod></seg><supplied resp="#AC">,</supplied> e circondata da così indiscutibili e ben pettinati perché, siede Regina del mondo.</seg></p>
+      <p><seg ana="#simile_parallelism_comparison"><seg ana="#allusion">Guai però se qualche maligno <seg ana="#correctio">pisano, <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">o non pisano,</add></mod></seg> sorge a imbrogliare le cose</seg>. Allora gli scienziati diventano peggio dei filosofi, e i calamai che volarono al <eventName ref="#concTrento">Concilio di <placeName ref="#Trento">Trento</placeName></eventName> fra i dottori o patrocinanti delle <mod change="#strato-2"><subst><del rend="strikethrough">ogni</del><add place="above">diverse</add></subst></mod> tendenze, sono <mod change="#strato-0" type="immediate" instant="true"><subst><del rend="strikethrough">batuffoli di</del> <add place="inline">pallottole di</add></subst></mod>
+      carta e di mollica <app><lem type="var">in confronto</lem><rdg ana="altVariant" type="substantive"><mod change="#strato-2">
+        <add place="above">rimpetto</add>
+      </mod></rdg></app> ai 
+      <app>
+        <lem><mod change="#strato-2" type="reuse">proietti<del rend="strikethrough">li</del></mod></lem>
+        <rdg><mod change="#strato-0">proiettili</mod></rdg>
+      </app>
+      che si scagliano i <mod change="#strato-0" type="immediate" instant="true"><subst><del rend="strikethrough">fautori</del> <add place="inline">cultori</add></subst></mod> delle ‘scienze positive’ <mod change="#strato-1" type="inserted"><add place="above">quando <seg ana="#metaphor">un osso li divide in partito</seg></add></mod> <quote source="#Furioso_II_5">con occhî bieci e più che bracia rossi</quote>.</seg></p>
+      <p>Chi <seg ana="#correctio">ha da fare, o presume di aver da fare</seg>, con la totalità giunge sempre 
+      a<mod change="#strato-0" type="reuse" instant="true"><add place="inline">d</add> <subst><del rend="overwritten">am<supplied resp="#AC">mettere</supplied></del><add place="superimposed">un</add></subst></mod>
+      punto ove è forza confessare «Hic nequeam consistere.»</p>
+      <p>Il secondo teorema può
+      <app>
+        <lem><mod change="#strato-1" type="superscript"><subst><del rend="strikethrough">quindi</del><add place="above">dunque</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">quindi</mod></rdg>
+      </app>
+       enunciarsi così: ‘Il sistema di relazioni espresso dalla 
+      <app>
+        <lem type="var">conoscenza</lem>
+        <rdg ana="altVariant" type="substantive">
+          <mod change="#strato-1">
+            <add place="above">ragione</add>
+          </mod>
+        </rdg>
+      </app> 
+      umana totale
+      <app>
+        <lem type="var">ha</lem>
+        <rdg ana="altVariant" type="substantive">
+          <mod change="#strato-1"><add place="above">contiene</add></mod>
+        </rdg>
+      </app>
+       in sé, anche attualmente, <seg ana="#correctio">un errore. <metamark function="attachment" rend="arrow"/><note type="authorial_autocomment" resp="#CEG" place="below"><mod change="#strato-3">(meditare se va bene.)</mod></note> (O più errori.)</seg><supplied resp="#AC">’</supplied> Ove si voglia chiamare errore sia la contraddizione <mod change="#strato-0" type="immediate" instant="true"><subst><del rend="strikethrough">, sia</del> <add place="inline">o antinomia, sia</add></subst></mod> una falsa relazione attuale, inventata di sana pianta 
+       <!--CODIFICA 1 (un termine come fase)--><!--<app>
+        <lem><mod change="#strato-1"><subst><del rend="strikethrough">o un</del><add place="above">I</add></subst> termin<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst> <add place="inline">sono già una ‘posizione’ abusiva.</add></mod></lem>
+        <rdg varSeq="2"><mod change="#strato-1"><add place="below">o un termine</add></mod></rdg>
+        <rdg varSeq="1"><mod change="#strato-0">.</mod></rdg>
+      </app>-->
+      <!--CODIFICA 2 (un termine come accidente)-->
+      <app>
+        <lem><mod change="#strato-1" type="insertion"><add place="below"><subst><del rend="strikethrough">o un</del><add place="above">I</add></subst> termin<subst><del rend="overwritten">e</del><add place="superimposed">i</add></subst> sono già una ‘posizione’ abusiva.</add></mod></lem>
+        <rdg><mod change="#strato-0">.</mod></rdg>
+      </app>
+      </p>
+     <p>Potrebbe nascere qui una lunga disputa se vi siano pause <mod change="#strato-0" type="reuse" instant="true">dell<subst><del rend="overwritten">e</del><add place="superimposed">a</add></subst></mod> ragione o sistemi <mod change="#strato-2" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">che siano</add></mod> in sé chiusi e perfetti. Ma credo che sarebbe difficile escogitarne alcuno che non desse luogo a <mod change="#strato-0" type="immediate" instant="true"><del rend="strikethrough">t<gap reason="omitted"/></del></mod> interrogativi angosciosi.</p>
+      <p>Questo 2° teorema, più che un’aggiunta al primo è un modo diverso di presentare le cose. Noi sappiamo che i ‘termini’ sono provvisorî, hanno senso storico, <seg ana="#metaphor">sono la situazione del giorno</seg>, e perciò <emph>errori</emph> rispetto all’integrazione. 
+      <pb n="26r (43)" xml:id="c_6.14.26r_p_43" facs="26r.jpg"/>
+      <note type="authorial_metatextual" resp="#CEG" place="opposite"><mod change="#strato-1">(Svolgere un po’ questo secondo teorema: vedendo se è il caso di <subst><del rend="strikethrough">mostrar</del> <add>pensare</add></subst> a una intrinseca necessità della ‘imperfetta chiusura’ come d’una poligonale topografica<supplied resp="#AC">.</supplied> Ricordare Kant e le antinomie)</mod></note></p>
+      <pb n="43v (60)" xml:id="c_6.14.43v_p_60" facs="43v.jpg"/>
+      <p><note type="authorial_structural" resp="#CEG" place="above"><mod change="#strato-1">Seguito di pag. 42. – 43: Teorema 2°. –</mod></note><note type="authorial_structural" resp="#CEG" place="above"><mod change="#strato-3">E || §. 14 Teorema 2°. dopo pag. 43 in alto X </mod></note>
+      <app>
+        <lem><mod change="#strato-0" type="reuse" instant="true"><add place="inline">In</add> <choice><sic>A</sic><corr resp="#AC">a</corr></choice>ltra e ben più vasta sede <subst><del rend="strikethrough">ha</del> <add place="above"><metamark function="insertion" rend="caret"/>è stata</add></subst> affacciat<subst><del rend="overwritten">o</del><add place="superimposed">a</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">Altra e ben più vasta sede ha affacciato</mod></rdg>
+      </app> 
+      al pensiero umano questa proposizione, <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">da <persName ref="#Zenone">Zenone eleatico</persName></add><supplied resp="#AC">,</supplied></mod> da <persName ref="#Bayle">Pietro Bayle</persName>, da <persName ref="#Kant">Kant</persName><app><lem><mod change="#strato-1" type="reuse"><subst><del rend="overwritten">.</del><add place="superimposed">,</add></subst> <metamark function="insertion" rend="caret"/><add place="above">per citare alcuni<supplied resp="#AC">.</supplied></add></mod></lem>
+        <rdg><mod change="#strato-0">.</mod></rdg>
+      </app>
+       Essi <mod change="strato-0" type="immediate" instant="true"><subst><del rend="strikethrough">l<gap reason="illegible" quantity="3" unit="chars"/></del> <add place="inline">denunciarono</add></subst></mod> le intime contraddizioni della interpretazione nostra del mondo.</p>
+      <p>Io<mod change="#strato-0" type="immediate" instant="true"><del rend="strikethrough">,</del></mod> intendo alludere, oltre che a queste contraddizioni, anche alle posizioni fittizie con cui la ragione <seg ana="#personification">cerca di <seg ana="#metaphor">tamponare le falle</seg> del sistema che essa 
+      <app>
+        <lem><mod change="#strato-1" type="reuse"><subst><del rend="strikethrough">si</del> <add place="above"><metamark function="insertion" rend="caret"/>ama di</add></subst> rappresenta<supplied resp="#AC">rsi</supplied></mod></lem>
+        <rdg><mod change="#strato-0">si rappresenta</mod></rdg>
+      </app>
+      come chiuso</seg>; 
+      <app>
+        <lem><mod change="#strato-1" type="superscript"><subst><del rend="strikethrough">ma che</del><add place="above">mentre</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">ma che</mod></rdg>
+      </app>
+      è in realtà 
+      <app>
+        <lem><mod change="#strato-1" type="reuse">apert<subst><del rend="overwritten">o</del><add place="superimposed">issimo</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">aperto</mod></rdg>
+      </app>
+      e indeterminato. Ed alludo altresì alla indeterminatezza derivante dalla <mod change="#strato-0" type="reuse">imp<subst><del rend="overwritten">er<supplied resp="#AC" cert="high">fetta</supplied></del><add place="superimposed">ossibile</add></subst></mod> chiusura d’un sistema: <seg ana="#commoratio"><seg ana="#anaphora">qualcosa rimane sempre di inspiegato: <seg ana="#periphrasis">qualcosa di cui ci si chiede perché</seg></seg></seg>, sia esso l’Io di <persName ref="#Fichte">Fichte</persName>; o il Dio di <persName ref="#Spinoza">Spinoza</persName>; o la Forma <rs type="person" ref="#Aristotele">aristotelica</rs> o il Noumeno della <bibl corresp="#ragionPura"><title>critica</title></bibl><app>
+        <lem><mod change="#strato-1"><supplied resp="#AC">;</supplied> <add place="below">o la monade <rs type="person" ref="#Bruno">bruniana</rs><del rend="overwritten">.</del> o la <choice><abbr>r.</abbr><expan resp="#AC" cert="high">ragione</expan></choice> <rs type="person" ref="#Leibniz">leibniziana</rs></add>.</mod></lem>
+        <rdg varSeq="2"><mod change="#strato-1"><supplied resp="#AC">;</supplied> <add place="below">o la monade bruniana.</add></mod></rdg> 
+        <rdg varSeq="1"><mod change="#strato-0">.</mod></rdg>  
+      </app>
+      E <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">in certo senso</add></mod> solo un sistema che abbia coscienza della impossibilità di questa ‘chiusura ermetica’ è valido in quanto sistema. In tutte le direzioni <pb n="44r (61)" xml:id="c_6.14.44r_p_61" facs="44r.jpg"/> della conoscenza vi sono limiti <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">redimibili</add></mod>: ma anche la <mod change="strato-0" type="immediate" instant="true"><subst><del rend="strikethrough">parte</del> <add place="inline">nucleazione</add></subst></mod> centrale od ombelicale è un sistema erroneo. La coscienza di questo inadeguato legamento, di questa coordinazione che lascia un residuo, di questo sistema-non sistema credo <mod change="#strato-0" type="immediate" instant="true"><subst><del rend="strikethrough">debba essere</del> <add place="inline">possa costituire</add></subst></mod> motivo di più profonde ed estese ed accurate ricerche. <note type="authorial_autocomment" resp="#CEG" place="below"><mod change="#strato-2">Occorrerebbe una cultura storica della filosofia che io no<supplied resp="#AC">n</supplied> <gap reason="omitted"/></mod></note></p>
+      <p><hi rend="italic">Ipotiposi N°. <gap reason="omitted"/></hi><supplied resp="#AC">.</supplied> <seg type="parallel" corresp="#rilievitopog">Nei <term>rilievi topografici</term>, servendoci p.e. del <term ref="#term1">tacheometro</term>, o di altro strumento <mod change="#strato-0" type="immediate" instant="true"><del rend="strikethrough">come</del> <add place="inline">più rudimentale come</add></mod> lo <term>squadro agrimensorio</term>, si tracciano delle 
+      <app>
+        <lem type="var"><term>poligonali</term></lem>
+        <rdg ana="altVariant" type="substantive">
+          <mod change="#strato-1"><add place="above">linee</add></mod>
+        </rdg>
+      </app>, 
+      <app>
+        <lem><mod change="#strato-1" type="superscript"><subst><del rend="strikethrough">per</del><add place="above">allo scopo di</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">per</mod></rdg>
+      </app>
+      definire <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">le</add></mod> <term>aree</term> o i loro <term>perimetri</term></seg>: esiste un ‘<emph><term>errore di chiusura della poligonale</term></emph>’, derivante dal fatto che la <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">nostra</add></mod> osservazione <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">imperfetta</add></mod> e il grado di esattezza dello strumento non consentono di ottenere angoli la cui somma risponda alla relazione <rs type="person" ref="#Euclide">euclidea</rs> <hi rend="italic">π<supplied resp="#AC">(</supplied>n – <choice><sic>4</sic><corr resp="#GR">2</corr></choice><supplied resp="#AC">)</supplied></hi>, <hi rend="italic">n</hi> essendo il numero degli angoli 
+      <app>
+        <lem><mod change="#strato-2" type="reuse">del<add place="inline">la</add> <term>poligon<subst><del rend="overwritten">o</del><add place="superimposed">ale</add></subst> 	<metamark function="insertion" rend="caret"/><add place="inline">chiusa</add></term></mod></lem>
+        <rdg><mod change="#strato-0">del poligono</mod></rdg>
+      </app>. 
+      Il sistema della ragione è un <term ref="#term1">tacheometro</term> molto più rozzo di quello de’ <term>topografi</term>, se 
+      <app>
+        <lem><mod change="#strato-1" type="reuse"><del rend="strikethrough">lo</del>riferiamo <add place="above">l<subst><del rend="overwritten">’es<supplied resp="#AC" cert="medium">attezza</supplied></del><add place="superimposed">a validità di</add></subst></add> entrambi <del rend="strikethrough">g</del>li strumenti</mod></lem>
+        <rdg><mod change="#strato-0">lo riferiamo</mod></rdg>
+      </app> ai 
+      <app>
+        <lem><mod change="#strato-1" type="superscript"><subst><del rend="strikethrough">fini</del><add place="above">compiti</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">fini</mod></rdg>
+      </app>
+       loro, e <app>
+       <lem><mod change="#strato-1" type="reuse"><del rend="strikethrough">g</del>li</mod></lem>
+       <rdg><mod change="#strato-0">gli</mod></rdg></app> errori di chiusura che esso commette nel definire sé medesimo, <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">e nell’organare il groviglio conoscitivo</add></mod><supplied resp="#AC">,</supplied> farebbe accapponar la pelle al più zotico de’ <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above"><term>topografi</term></add></mod> praticoni.</p>
+      <p><hi rend="italic">Derivazione per il Metodo</hi>: Ecco perché il nostro metodo prediletto è quello della chiazza d’olio allargantesi e non l’andar subito a trovare Dio o l’intima fibra dell’essere; ché questi termini impli<pb n="44v (62)" xml:id="c_6.14.44v_p_62" facs="44v.jpg"/>cano certezza e staticità, nel mentre noi siamo convinti d’una cosa sola: che qualcosa accade e per 
+      <app>
+        <lem><mod change="#strato-1" type="reuse">accade<del rend="strikethrough">re</del></mod></lem>
+        <rdg><mod change="#strato-0"></mod>accadere</rdg>
+      </app> 
+      intendiamo ‘si deforma’. <seg type="parallel" corresp="#tirreno">E ciò sebbene i ghiacci scintillanti e le erme fronti dell’<placeName ref="#Alpi">Alpi</placeName> <mod change="#strato-1" type="inserted"><add place="above">o</add><metamark function="insertion" rend="arrow"/> <add place="top">la stella che dal <add place="above">meraviglioso</add> <placeName ref="#Tirreno">Tirreno</placeName> sormonta la nave <subst><del rend="overwritten">ora</del><add place="superimposed">già</add></subst> scomparente</add></mod> ci sembrino <mod change="#strato-0" type="reuse" instant="true">delinea<subst><del rend="overwritten">re</del><add place="superimposed">zione<metamark function="insertion" rend="caret"/></add></subst></mod> e simbolo d’un eleatico essere.</seg></p>
+      <p>Ma il <term>glaciologo</term> dice che <mod change="#strato-0" type="immediate" instant="true"><subst><del rend="strikethrough">il</del> <add place="inline">l’</add></subst></mod><placeName ref="#Aletsch">Aletsch</placeName> <mod change="#strato-0" type="overwritten" instant="true"><subst><del rend="overwritten">s<supplied resp="#AC" cert="medium">corre</supplied></del><add place="superimposed" ><term>defluisce</term></add></subst></mod>, se pur più lento del <placeName ref="#Rodano">Rodano</placeName>: e le fronti marmoree <term>si erodono</term><mod change="#strato-1" type="inserted"><add  place="inline">,</add><metamark function="insertion" rend="caret"/><add  place="above">coronate di nembi o avvinte dal rigelo</add></mod>; <seg type="parallel" corresp="#dolori"><!--PROBLEMA CON EVT: se inserisco più di un attributo @source, non mi mostra né uno né l'altro!--><mod change="#strato-1" type="inserted"><add place="below">e nella <metamark function="insertion" rend="caret"/><add place="above">apparente immobile</add> notte i punti di zaffiro <add place="above">e</add> d’oro sono, forse, lontani dolori.</add></mod></seg> E l’infinita somma delle relazioni del reale non lascia nulla di immutato, perché tutto <mod change="#strato-0" type="immediate" instant="true"><del rend="strikethrough">leibnizianam<supplied resp="#AC" cert="high">ente</supplied></del></mod> risente, sebbene in misura variabile<supplied resp="#AC">,</supplied> della deformazione totale. E la materia o stasi o permanere non è che <mod change="#strato-0" type="reuse" instant="true"><add place="inline">i</add>l<del rend="strikethrough">a</del> necessari<subst><del rend="overwritten">a</del><add rend="superimposed">o</add></subst></mod> termine reattivo (reattivo logico<subst><del rend="overwritten">)</del><del rend="overwritten">, o dir<supplied resp="#AC" cert="medium">imente</supplied></del><add place="superimposed">) della deformazione</add></subst><app>
+        <lem><mod change="#strato-0"><subst><del rend="overwritten">.</del><add place="superimposed">,</add></subst> <add place="inline">come si è mostrato al § <supplied resp="#AC">V</supplied>.</add></mod></lem>
+        <rdg><mod change="#strato-0">.</mod></rdg>
+      </app> <note type="authorial_structural" resp="#CEG" place="below"><mod change="#strato-1">Fine del teorema 2°. –</mod></note><note type="authorial_structural" resp="#CEG" place="right"><mod change="#strato-3">fine §. 14 <lb/>E</mod></note></p>
+      <p><pb n="45r (62bis)" xml:id="c_6.14.45r_p_62bis" facs="45r.jpg"/><note type="authorial_structural" resp="#CEG" place="top"><mod change="#strato-3">dopo E di pag. 62. §. 14.</mod></note> Se noi contempliamo un oggetto finito, anche de’ più chiusi e circostanziati in sé, di quelli che dentro i loro limiti spaziali temporali organici causali finalistici hanno la più generosa dovizie di giustificazioni e di motivazioni, noi vediamo che esso, così considerato contiene un errore. Esso è così erroneamente concepito.</p>
+      <p>Questo non è che un altro aspetto, un aspetto brutto e tragico per i cuori deboli, del teorema della necessaria coesistenza della totalità reale. Ma là l’enunciato sollevava il nostro animo a una visione radiosa di <mod change="#strato-1" type="reuse"><add place="inline">co</add></mod>motivazioni ∞te; <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">nel mentre</add></mod> qui questo enunciato <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">lo</add></mod> deprime in uno scetticismo ascet<mod change="#strato-0" type="overwritten" instant="true"><subst><del rend="overwritten">t</del><add place="superimposed">i</add></subst></mod>co e restrittivo, come chi dicesse all’uomo: «Per quanto tu lavori, sarai dannato.» Eppure è così. Tocca all’uomo veramente eroico di riconoscere un contenuto limitato al suo lavoro e al suo eroismo e di non presumere grottescamente di sé, e di non affermare certezze che non possiede.</p>
+      <p>Col bel risultato di <seg ana="#metaphor">fabbricare mondi di cartapesta</seg> sulle sue presunte certezze.</p>
+      <p><hi rend="italic">Esempio</hi>: Il corpo umano è uno splendido oggetto, e serve per lodare il Creatore, che è perfetto, ben studiato, ecc. – Eppure esso è: a) ingiustificabile in sé, occorrendo alla giustificazione almeno padre e madre (nella più 
+      <app>
+        <lem><mod change="#strato-1" type="superscript"><subst><del rend="strikethrough">povera</del><add place="above">rosea</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">povera</mod></rdg>
+      </app>
+       delle ipotesi) e molte pagnotte; b) inadeguato ai fini (supposti): tant’è vero che se io scrivo molto o studio molto mi stanco molto. Altri esempi di sistemi in sé <pb n="45v (63bis)" xml:id="c_6.14.45v_p_63bis" facs="45v.jpg"/> ingiustificabili:</p>
+      <p>Una pentola. Un’automobile. <mod change="#strato-0" type="reuse" instant="true">Un<subst><del rend="strikethrough">o</del><add><choice><sic>'</sic><corr resp="#AC"> </corr></choice></add></subst></mod>ippodromo. Un biglietto di Banca. Un magazzino di formaggio. <mod change="#strato-1" type="inserted"><metamark function="insertion" rend="caret"/><add place="above">Un cavallo<supplied resp="#AC">.</supplied></add></mod> Una nazione. <mod change="#strato-0" type="reuse" instant="true">Un<del type="immediate" instant="true" rend="strikethrough">a</del></mod> corpus di leggi.</p>
+      <p>Tutti li oggetti reali.</p>
+      <p>Tutti i sistemi reali.</p>
+      <p>Ora è possibile che solo il sistema della 
+      <app>
+        <lem><mod change="#strato-1" type="superscript"><subst><del rend="strikethrough">ragione</del><add place="above">conoscenza</add></subst></mod></lem>
+        <rdg><mod change="#strato-0">ragione</mod></rdg>
+      </app>
+       umana debba essere in sé chiuso e perfetto? Unica eccezione alla regola? No. E così 
+       <mod change="#strato-0" type="superscript" instant="true"><subst><del rend="strikethrough">nessun</del><add place="above">tutti i</add></subst></mod>
+        sistemi filosofici contengono certamente un residuo o errore di chiusura.</p>
+      <p>Qualcuno fra i molti razionalisti del sec. 17°-18° sarà stato certo 'della finitezza in sè' del sistema della conoscenza. Bastano a smentirlo le trovate del sec. 19° e 20°.</p>
+      <p>Non ripetiamo noi lo stesso errore.</p>
+      <p>Il critico: «Ma voi confondete conoscenza ossia corpus di giustificazioni reali, e ragione ossia metodo di abbrancamento delle nozioni…<supplied resp="#AC">»</supplied></p>
+      <p><supplied resp="#AC">«</supplied>Vi rimando al già detto (limiti e categorie.)<supplied resp="#AC">»</supplied></p>
+    </div>
+  </body>
+  <back>
+    <!--GLOSSARY DIV-->
+    <div type="glossary">
+      <head>Glossario</head>
+      <list>
+        <label n="1" xml:id="term1">Tacheometro</label>
+        <item>sm. Topogr. Strumento topografico di non elevata precisione, dotato di un declinometro magnetico e di un cannocchiale distanziometrico per la misurazione diretta degli angoli (azimutali e zenitali) e indiretta delle distanze. (<bibl>GDLI, XX, p. 659</bibl>)</item>
+      </list>
+    </div>
+    <!--SOURCES DIV-->
+    <div type="sources">
+      <head>Fonti</head>
+      <cit xml:id="Furioso_II_5">
+        <ref corresp="#furioso32">
+          <bibl>
+            <author>Ariosto</author>,
+            <title>Orlando Furioso</title>,
+            <citedRange>II, 5</citedRange>
+          </bibl>
+        </ref>
+        <lb/><q><lg>
+          <l>Come soglion talor duo can mordenti, &#47;</l><lb/>  
+          <l>o per invidia o per altro odio mossi, &#47;</l><lb/>
+          <l>avicinarsi: digrignando i denti &#47;</l><lb/>
+          <l>con occhi bieci e piú che bracia rossi: &#47;</l><lb/>
+          <l>indi a morsi venir di rabbia ardenti &#47;</l><lb/>
+          <l>con aspri ringhi e ribuffati dossi: &#47;</l><lb/>
+          <l>cosí alle spade e dai gridi e da l’onte &#47;</l><lb/>
+          <l>venne il Circasso e quel di Chiaramonte. &#47;</l>
+        </lg></q>
+      </cit>
+    </div>
+    <!--PARALLEL PASSAGES DIV-->
+    <!--se uso cit anziché note non distingue tra fonti e paralleli; con markup indicato in lineeguida evt non si vedono né riferimento bibliografico né testo parallelo...-->
+    <div type="analogues">
+      <head>Passi paralleli</head>
+      <note xml:id="fortilizî" type="parallel" resp="#AC">
+        <ref n="1" corresp="#RR1_CdD">
+          <bibl>
+            <author corresp="#CEG">Gadda</author>, <title>La cognizione del dolore</title> [<date from="1938" to="1941" >1938-1941</date>]. V. <citedRange>RR I, p. 733</citedRange>:
+          </bibl>
+        </ref>
+        <lb/>
+        <q>E piantano, sotto ai ponti, merde mandorlate, e sulle rovine dei fortilizi spagnoli.... sgretolate come torroni secchi, imbibite come babà....</q>
+      </note>
+
+      <!--PROBLEMA: EVT mostra nel secondo fumetto nuovamente il primo rif. bibliografico!-->
+      <note xml:id="rilievitopog" type="parallel" resp="#AC">
+        <ref n="1" corresp="#SGF2_GGP">
+          <bibl>
+            <author corresp="#CEG">Gadda</author>, <title>Giornale di guerra e di prigionia</title> [<date from="1915-08" to="1919-12">1915-19</date>]. V. <citedRange>SGF II, p. 548</citedRange>:
+          </bibl>
+        </ref>
+        <lb/>
+        <q>Ecco ora un cenno topografico del luogo in cui mi trovo, fatto senza aver visto i dintorni se non dal solo mio punto d’osservazione, con l’aiuto d’una carta d’approssimazione litografata in nero, con linee di livello poco chiare.</q><lb/><lb/>
+
+        <ref n="2" corresp="#RR1_L-A">
+          <bibl>
+            <author corresp="#CEG">Gadda</author>, <title level="a">I ritagli di tempo</title> [<date when="1942">1942</date>], in <title level="m">L’Adalgisa – Disegni milanesi</title>. V. <citedRange>RR I, p. 465</citedRange>:
+          </bibl>
+        </ref>
+        <lb/>
+        <q>Dal muso rasciutto come d’una lucertola d’Africa, con tre fili di capello stirati su quel cranietto secco secco, come i fili di ragno sull’obiettivo del tacheòmetro.</q><lb/><lb/>
+
+        <ref n="3" corresp="#SGF1_SD">
+          <bibl>
+            <author corresp="#CEG">Gadda</author>, <title level="a">Galileo Ferraris e gli scienziati piemontesi</title> [<date when="1951">1951</date>], in <title level="m">Scritti dispersi</title>. V. <citedRange>SGF I, p. 982</citedRange>:
+          </bibl>
+        </ref>
+        <lb/>
+        <q>Diede una rappresentazione o traduzione geometrica della teoria dei sistemi diottrici di Gauss (è del 1840, Göttingen, la celebre memoria di Gauss: <title>Dioptrische Untersuchungen</title>) rendendola inseribile nei corsi di fisica generale e di topografia. Nel 1884 presenta alla Reale Accademia delle Scienze una memoria sul canocchiale analattico del maggiore Porro, che è «in nuce» il moderno tacheometro.</q>
+      </note>
+
+      <note xml:id="tirreno" type="parallel" resp="#AC">
+        <ref n="1" corresp="#RR1_CdU">
+          <bibl>
+            <author corresp="#CEG">Gadda</author>, <title>Il castello di Udine</title> [<date when="1934">1934</date>].V. <citedRange>RR I, p. 202</citedRange>:
+          </bibl>
+        </ref><lb/>
+        <q>La rèsina, guida ebbra di meridiani sogni con cùmuli di nubi nell’Alpe o alla marina del Tirreno, si fa ora interprete di chiari pensieri, quasi di ricordi: navi, uomini ed isole nella luce che fu di Parmènide e di Lisippo. Il muro azzurro dell’Anatolia è di fronte, di là dal breve seno dell`Egeo: ma l’animo relutta ai pascià, e l’immagine dell’Anadiomène Rodia insiste ad essere piuttosto una reminiscenza che un’apparizione. Forse, nel mito del Fedro, il divinatore ha veduto la verità? Forse noi non siamo che una memoria e il nostro sogno non è che un vano protenderci verso la comune luce.</q>
+      </note>
+
+      <note xml:id="dolori" type="parallel" resp="#AC">
+        <ref n="1" corresp="#SVP_RI">
+          <bibl>
+            <author corresp="#CEG">Gadda</author>, <title>Racconto italiano di ignoto del Novecento</title> [<date from="1924" to="1925">1924-25</date>]. V. <citedRange>SVP, p. 401</citedRange>:
+          </bibl>
+        </ref><lb/>
+        <q>I mondi al di là dei cipressi, tra i cipressi, sono freddi segni dell’irraggiungibile bene! Nostra casa è la notte o la buia terra. Notte, immobile notte! I tuoi punti di zaffìro e d’oro sono forse lontani dolori.</q><lb/><lb/>
+
+        <ref n="2" corresp="#RR2_M">
+          <bibl>
+            <author corresp="#CEG">Gadda</author>, <title>La meccanica</title> [<date when="1928">1928</date>]. V. <citedRange>RR II, p. 583</citedRange>:
+          </bibl>
+        </ref><lb/>
+        <q>Ma dentro il gelo del silenzio arrivava ininterrotto un rotolamento di lontani tuoni, riempiva l’oscurità delle terre, e si mesceva ne’ giardini ai profumi cupi de’ fiori, nell’anelito d’una voluttà mortale. Notte, immobile notte! I tuoi punti di zaffiro e d’oro sono, forse, lontani dolori.</q>
+      </note>
+    </div>  
+    <!--INTERPRETATIONS DIV-->
+    <div type="interpretations"> 
+      <interpGrp resp="#AC" type="figures_of_speech">
+        <interp xml:id="accumulation">Accumulazione</interp>
+        <interp xml:id="allusion">Allusione</interp>
+        <interp xml:id="anadiplosis">Anadiplosi</interp>
+        <interp xml:id="anaphora">Anafora</interp>
+        <interp xml:id="antonomasia">Antonomasia</interp>
+        <interp xml:id="commoratio">Commoratio</interp>
+        <interp xml:id="correctio">Correctio</interp>
+        <interp xml:id="epiphonema">Epifonema</interp>
+        <interp xml:id="epiphora">Epifora</interp>
+        <interp xml:id="metaphor">Metafora</interp>
+        <interp xml:id="metonymy">Metonimia</interp>
+        <interp xml:id="periphrasis">Perifrasi</interp>
+        <interp xml:id="personification">Personificazione</interp>
+        <interp xml:id="polysyndeton">Polisindeto</interp>
+        <interp xml:id="rhetorical_question">Domanda retorica</interp>
+        <interp xml:id="sermocinatio">Sermocinatio</interp>
+        <interp xml:id="simile_parallelism_comparison">Similitudine, parallelismo, paragone</interp>
+        <interp xml:id="symploce">Simploche</interp>
+      </interpGrp>
+    </div>
+  </back>
+ </text>
+</TEI>
