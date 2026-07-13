@@ -1,0 +1,130 @@
+{
+    "additionAbove": {
+      "markup": {
+          "element": "add",
+          "attributes": {
+              "place": "above"
+          }
+      },
+      "layouts": {
+          "diplomatic": {
+              "style": {
+                  "top": "-10px",
+                  "position": "relative"
+              }
+          },
+          "critical": {
+            "style": {
+                "background-color": "#none"
+            }
+        },
+          "interpretative": {
+              "pre": "\\",
+              "post": "/",
+              "style": {
+                  "background-color": "#ffcc00"
+              }
+          }
+      }
+  },
+  "additionBelow": {
+    "markup": {
+        "element": "add",
+        "attributes": {
+            "place": "below"
+        }
+    },
+    "layouts": {
+        "critical": {
+          "style": {
+              "background-color": "white",
+              "top": "-6px",
+              "position": "relative"
+          }
+      },
+      "diplomatic": {
+        "style": {
+            "bottom": "-3px",
+            "position": "relative"
+        }
+    }
+    }
+},
+  "additionSuperimposed": {
+    "markup": {
+        "element": "add",
+        "attributes": {
+            "place": "superimposed"
+        }
+    },
+    "layouts": {
+        "critical": {
+          "style": {
+              "background-color": "white"
+          }
+      },
+      "diplomatic": {
+        "style": {
+            "background-color": "#daffb0"
+        }
+    }
+    }
+},
+"additionInline": {
+    "markup": {
+        "element": "add",
+        "attributes": {
+            "place": "inline"
+        }
+    },
+    "layouts": {
+        "critical": {
+          "style": {
+              "background-color": "none"
+          }
+      }
+    }
+},
+  "deletionsStrikethrough": {
+      "markup": {
+          "element": "del",
+          "attributes": {
+            "rend": "strikethrough"
+        }
+      },
+      "layouts": {
+          "critical": {
+              "style": {
+                  "display": "none"
+              }
+          },
+          "diplomatic": {
+            "style": {
+                "background-color": "#ebb07a"
+            }
+        }
+      }
+  },
+  
+  "deletionsOverwritten": {
+    "markup": {
+        "element": "del",
+        "attributes": {
+          "rend": "overwritten"
+      }
+    },
+    "layouts": {
+        "critical": {
+            "style": {
+                "display": "none"
+            }
+        },
+        "diplomatic": {
+            "style": {
+                "background-color": "#b0e2ff",
+                "font-style": "italic"
+            }
+        }
+    }
+}
+}

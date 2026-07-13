@@ -1,0 +1,166 @@
+evt-paragraph p {
+  font-size: 20px;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  text-indent: 0.8em;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+evt-ms-desc p {
+  text-indent: 0;
+  line-height: 1.1em;
+  padding-left: 0;
+}
+
+.author {
+  font-variant: small-caps;
+  font-weight: 505;
+  color: rgb(35, 37, 37);
+}
+
+.title {
+  font-style: italic;
+}
+
+.gap:hover {
+  background-color: #fff !important;
+}
+
+.emph {
+  font-style: italic;
+}
+
+.analogueEntry {
+  text-decoration-thickness: 2px !important;
+  text-decoration-color: rgb(131, 16, 160) !important;
+  background-color: none !important;
+}
+
+.sourceEntry {
+  text-decoration-thickness: 2px !important;
+  text-decoration-color: rgb(160, 16, 83) !important;
+}
+
+.note-icon,
+.note-icon .arrow {
+  background: #f0a911 !important;
+  border: 1px solid #f0a911 !important;
+}
+
+span.pre {
+  display: none;
+}
+
+/*Varianti alternative: colore modificato in edition_config, qui aggiunta sottolineatura*/
+/*NO, CORREGGERE: ho aggiunto la sottolineatura a tutte le lezioni con apparato, non solo alle varianti*/
+.app-entry-lem {
+  text-decoration: underline 2px dotted salmon;
+}
+/*CORREZIONE (:not non funziona e none non funziona)*/
+.mod-reading .ng-star-inserted .mod.pointer {
+  text-decoration: underline 3px solid #fff !important;
+}
+
+/************************************/
+
+.w .lb {
+  display: none;
+}
+
+.ab[rend="align-center"] {
+  display: block;
+  text-align: center;
+}
+
+*[rend="strikethrough"] {
+  text-decoration: line-through;
+}
+
+*[rend="overwritten"] {
+  font-weight: bold;
+}
+
+*[rend="underline"] {
+  text-decoration: underline;
+}
+
+*[rend="italic"] {
+  font-style: italic;
+}
+
+*[rend="erasure"] {
+  background-color: rgb(70, 70, 70);
+}
+
+*[rend="cross"] {
+  text-decoration: line-through;
+}
+
+*[rend="line_full_width"] {
+  margin-bottom: 0.1rem;
+  border-bottom: 1px solid black;
+  display: block;
+}
+
+*[place="superscript"] {
+  vertical-align: text-bottom;
+}
+
+*[place="below"] {
+  vertical-align: text-top;
+}
+
+*[place="top"] {
+  vertical-align: text-bottom;
+}
+
+evt-page :not(evt-apparatus-entry-detail) .head {
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.5em 0.1em 0.5em 0em;
+}
+
+evt-page :not(evt-apparatus-entry-detail) .closer {
+  display: block;
+}
+
+evt-page :not(evt-apparatus-entry-detail) .signed {
+  display: inline-block;
+  /* font-style: italic; */
+}
+
+evt-page :not(evt-apparatus-entry-detail) .retrace {
+  font-weight: bolder;
+}
+
+evt-page :not(evt-apparatus-entry-detail) .verse-num {
+  color: black !important;
+}
+
+evt-page :not(evt-apparatus-entry-detail) .verse-num:before {
+  border: none !important;
+  background: none !important;
+}
+
+.metamark[rend="line"] {
+  display: block;
+  border: 1px solid black;
+  margin-top: -1em;
+  margin-right: 70%;
+}
+
+evt-reading evt-note,
+evt-addition evt-note {
+  display: none;
+}
+
+.fw {
+  display: block;
+}
+
+[type="pageNum"][place="top_right"] {
+  float: right;
+  margin-top: -1.5rem;
+}

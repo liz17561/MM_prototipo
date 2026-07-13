@@ -1,0 +1,288 @@
+{
+	"editionTitle": "Meditazione milanese",
+	"badge": "prototipo",
+	"editionHome": "#",
+	"availableEditionLevels": [
+		{
+			"id": "diplomatic",
+			"label": "Diplomatica",
+			"enable": true,
+			"hidden": false
+		},
+		{
+			"id": "interpretative",
+			"label": "Interpretativa",
+			"enable": false,
+			"hidden": true
+		},
+		{
+			"id": "critical",
+			"label": "Critica",
+			"enable": true,
+			"hidden": false
+		},
+		{
+			"id": "changesView",
+			"value": "changesView",
+			"label": "Genetica",
+			"enable": true,
+			"hidden": false
+		}
+	],
+	"downloadableXMLSource": true,
+	"namedEntitiesLists": {
+		"persons": {
+			"defaultLabel": "Persone",
+			"enable": true
+		},
+		"places": {
+			"defaultLabel": "Luoghi",
+			"enable": true
+		},
+		"organizations": {
+			"defaultLabel": "Organizations",
+			"enable": false
+		},
+		"relations": {
+			"defaultLabel": "Relations",
+			"enable": false
+		},
+		"technicalTerms": {
+			"defaultLabel": "Tecnicismi",
+			"enable": true
+		},
+		"events": {
+			"defaultLabel": "Eventi",
+			"enable": true
+		}
+	},
+	"showLists": true,
+	"entitiesSelectItems": [
+		{
+			"label": "Entità",
+			"items": [
+				{
+					"value": "persName",
+					"label": "Persone (rif. diretti)",
+					"color": "#fcfc60",
+					"enable": true
+				},
+				{
+					"value": "rs[type='person']",
+					"label": "Persone (rif. indiretti)",
+					"color": "#ffebcd",
+					"enable": true
+				},
+				{
+					"value": "persName[type='episcopus']",
+					"label": "bishops",
+					"color": "rgb(139, 98, 236)",
+					"enable": false
+				},
+				{
+					"value": "placeName,geogName",
+					"label": "Luoghi",
+					"color": "#add8e6",
+					"enable": true
+				},
+				{
+					"value": "eventName",
+					"label": "Eventi",
+					"color": "#dda0dd",
+					"enable": true
+				},
+				{
+					"value": "title",
+					"label": "Opere",
+					"color": "#FFB74D",
+					"enable": true
+				},
+				{
+					"value": "orgName",
+					"label": "organizations",
+					"color": "#FFB74D",
+					"enable": false
+				}
+			],
+			"enable": true
+		},
+		{
+			"label": "Fenomeni lessicali",
+			"items": [
+				{
+					"value": "term",
+					"label": "Tecnicismi",
+					"color": "#f08080",
+					"enable": true
+				},
+				{
+					"value": "foreign",
+					"label": "Forestierismi",
+					"color": "#80759c",
+					"enable": true
+				},
+				{
+					"value": "w[type='neologism']",
+					"label": "Neologismi",
+					"color": "#ba5d38",
+					"enable": true
+				},
+				{
+					"value": "w[type='authorialneologism']",
+					"label": "Neologismi d'autore",
+					"color": "#f08359",
+					"enable": true
+				}
+			],
+			"enable": true
+		},
+		{
+			"label": "Figure retoriche",
+			"items": [
+				{
+					"value": "seg[ana='#allusion']",
+					"label": "Allusione",
+					"color": "#d54ca2",
+					"enable": true
+				},
+				{
+					"value": "seg[ana='#simile_parallelism_comparison']",
+					"label": "Similitudine, parallelismo, paragone",
+					"color": "#feff81",
+					"enable": true
+				},
+				{
+					"value": "seg[ana='#metaphor']",
+					"label": "Metafora",
+					"color": "#eaccf0",
+					"enable": true
+				},
+				{
+					"value": "seg[ana='#personification']",
+					"label": "Personificazione",
+					"color": "#ffe4e1",
+					"enable": true
+				},
+				{
+					"value": "seg[ana='#antonomasia']",
+					"label": "Antonomasia",
+					"color": "#afeeee",
+					"enable": true
+				},
+				{
+					"value": "seg[ana='#anaphora']",
+					"label": "Anafora",
+					"color": "#cad892",
+					"enable": true
+				},
+				{
+					"value": "seg[ana='#commoratio']",
+					"label": "Commoratio",
+					"color": "#bf8e8e",
+					"enable": true
+				},
+				{
+					"value": "seg[ana='#accumulation']",
+					"label": "Accumulazione",
+					"color": "#a3f4a3",
+					"enable": true
+				},
+				{
+					"value": "seg[ana='#correctio']",
+					"label": "Correctio",
+					"color": "#bd5c5c",
+					"enable": true
+				},
+				{
+					"value": "seg[ana='#periphrasis']",
+					"label": "Perifrasi",
+					"color": "#e2fab1",
+					"enable": true
+				},
+				{
+					"value": "rolename",
+					"label": "roles",
+					"enable": false
+				},
+				{
+					"value": "measure",
+					"label": "measures",
+					"enable": false
+				}
+			],
+			"enable": true
+		}
+	],
+	"notSignificantVariants": [
+		"type=orthographic"
+	],
+	"defaultEdition": "changesView",
+	"defaultViewMode": "imageText",
+	"proseVersesToggler": false,
+	"defaultTextFlow": "prose",
+	"verseNumberPrinter": 5,
+	"readingColorLight": "rgba(0, 0, 0, 0)",
+	"readingColorDark": "rgba(0, 0, 0, 0)",
+	"externalBibliography": {
+		"biblAttributeToMatch": "xml:id",
+		"elementAttributesToMatch": [
+			"target",
+			"corresp",
+			"source",
+			"cit"
+		]
+	},
+	"biblView": {
+		"propsToShow": [
+			"author",
+			"title",
+			"date",
+			"editor",
+			"publisher",
+			"pubPlace",
+			"citedRange",
+			"biblScope"
+		],
+		"showAttrNames": true,
+		"showEmptyValues": true,
+		"inline": true,
+		"commaSeparated": true,
+		"showMainElemTextContent": true,
+		"changeSequenceView": {
+      "showVarSeqAttr": false,
+      "showSeqAttr": false,
+      "layerColors": []
+    }
+	},
+	"analogueMarkers": [
+		"ParallelPassage",
+		"parallelPassage",
+		"Parallel",
+		"parallel",
+		"seg[type='parallel']"
+	],
+	"sourcesExcludedFromListByParent": [
+		"desc"
+	],
+	"showSubstitutionMarker": true,
+	"showSeparatorBetweenChanges": true,
+	"startingFromDefinitiveLayer": true,
+	"showChangeLayerMarkerInText": true,
+	"changeSequenceView": {
+		"showVarSeqAttr": true,
+		"showSeqAttr": true,
+		"layerColors": {
+			"strato-0": "#eccffa",
+			"strato-1": "#b48dc7",
+			"strato-2": "#6d3e85",
+			"strato-3": "#7B66FF",
+			"strato-4": "#3e22f3",
+			"strato-5": "#100077"
+		}
+	},
+	"defaultImageZoomLevel": 1.1,
+	"maxImageZoomLevel": 3,
+	"multiPageEngineForCriticalEdition": true
+}
+
+
